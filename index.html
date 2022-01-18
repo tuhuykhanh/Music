@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="shortcut icon" href="#">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <header class="header">
+
+        <form action="" class="search-form">
+            <input type="text">
+            <div class="fas fa-search"></div>
+        </form>
+
+        <div class="interface icon">
+            <i class="fas fa-sun"></i>
+            <i class="far fa-moon"></i>
+        </div>
+
+        <div class="setting icon">
+            <i class="fas fa-cog "></i>
+        </div>
+        <div class="user icon">
+            <i class="fas fa-user-alt"></i>
+        </div>
+
+    </header>
+
+    <nav class="navbar">
+        <div class="nav-logo">
+            <a href="#home">
+                <h1>huy khanh</h1><i class="fas fa-music"></i>
+            </a>
+        </div>
+
+        <div class="nav-list">
+
+            <div class="pack">
+                <h2> browse music</h2>
+
+                <ul class="list">
+
+                    <li class="list-item homeBtn">
+                        <a href=""> <i class="fas fa-home"></i>Home</a>
+                    </li>
+
+                    <li class="list-item albumBtn">
+                        <a href=""> <i class="fas fa-compact-disc"></i>albums</a>
+                    </li>
+
+                    <li class="list-item playingBtn">
+                        <a href=""><i class="fab fa-servicestack"></i>track</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="pack">
+                <h2> library</h2>
+
+                <ul class="list">
+
+                    <li class="list-item">
+                        <a href=""> <i class="fas fa-home"></i>-</a>
+                    </li>
+
+                    <li class="list-item">
+                        <a href=""> <i class="fas fa-compact-disc"></i>-</a>
+                    </li>
+
+                    <li class="list-item">
+                        <a href=""><i class="fab fa-servicestack"></i>-</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="play">
+
+        <div class="play-control">
+
+            <div class="play-control_left">
+                <div class="image">
+                    <img src="./images/main.png" alt="">
+                </div>
+                <div class="info">
+                    <h3 class="name" style="font-weight: 300;"> name </h3>
+                    <h3 class="author"  style="font-weight: 300; "> <span style="color:var(--orange)"> author</span></h3>
+                </div>
+            </div>
+            <div class="play-control_button">
+
+                <div class="control">
+                    <div class="repeat btn">
+                        <i class="fas fa-redo-alt"></i>
+                    </div>
+
+                    <div class="prev btn">
+                        <i class="fas fa-step-backward"></i>
+                    </div>
+
+                    <div class="play-toggle  ">
+
+                       <div class="btnPlay">
+                        <i class="fas fa-play"></i>
+                       </div>
+
+                      <div class="btnPause">
+                        <i class="fas fa-pause"></i>
+                      </div>
+
+                    </div>
+                    <div class="next btn">
+                        <i class="fas fa-step-forward"></i>
+                    </div>
+                    <div class="random btn">
+                        <i class="fas fa-random"></i>
+                    </div>
+
+                </div>
+                <div class="range">
+                            <div class="current">
+                                    <span class="min">0</span>: <span class="sec">00</span>
+                            </div>
+
+                    <input id="inputRange" class="inputRange" type="range" value="0" step="1" min="0" max="100">
+                                   
+                            <div class="dura">
+                                     <span class="min">0</span>: <span class="sec">00</span>
+                            </div>
+                </div>
+
+            </div>
+            <div class="play-control_right">
+                <div class="volumn">
+                    <i class="fas fa-volume-up"></i>
+                    <i class="fas fa-volume-mute"></i>
+                </div>
+                <div class="volumn-range">
+                    <input type="range" class="volumnbar" name="" id="" value="0" step="0.1" min="0" max="1">
+                </div>
+            </div>
+            <audio  id="audio" src=""></audio>
+        </div>
+
+    </div>
+
+    <section class="home" id="home">
+
+        <div class="container">
+
+            <div class="slider">
+
+                <div class="prev btn">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="next btn">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+
+                <div class="slider-show">
+                    <img src="./images/background/bg1.jpg" alt="">
+                </div>
+
+                <div class="slider-dot">
+
+                    <div class="box-image active">
+                        <img src="./images/background/bg1.jpg" hidden alt="">
+                    </div>
+                    <div class="box-image">
+                        <img src="./images/background/bg2.jpg" hidden alt="">
+                    </div>
+                    <div class="box-image">
+                        <img src="./images/background/bg3.jpg" hidden alt="">
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="onTrending">
+                <div class="top">
+
+                    <div class="songInfo">
+
+                        <div class="cDSong">
+                            <img src="./images/song/songtop2.jpg" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="songName">
+                                On playing: <span> huy khanh </span>
+                            </div>
+                            <div class="songAuthor">
+                                author: <span> huy khanh </span>
+                            </div>
+                            <button> play list</button>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="list">
+
+
+                    <div class="box">
+                        <h4>favorite list</h4>
+                        <img src="./images/song/songtop.jpg" alt="">
+                    </div>
+
+                    <div class="box">
+                        <h4>trying list</h4>
+                        <img src="./images/song/songtop2.jpg" alt="">
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <div class="songList">
+            <div class="container-song">
+
+                <div class="song-box">
+
+                    <img src="./images/song/songtop2.jpg" alt="">
+                    <div class="control">
+                        <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="song-box">
+
+                    <img src="./images/song/songtop2.jpg" alt="">
+                    <div class="control">
+                        <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="song-box">
+
+                    <img src="./images/song/songtop2.jpg" alt="">
+                    <div class="control">
+                        <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="song-box">
+
+                    <img src="./images/song/songtop2.jpg" alt="">
+                    <div class="control">
+                        <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="song-box">
+
+                    <img src="./images/song/songtop2.jpg" alt="">
+                    <div class="control">
+                        <ion-icon name="play-circle-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="song-box">
+
+                    <img src="./images/song/songtop2.jpg" alt="">
+                    <div class="control">
+                        <ion-icon class="icon" name="play-circle-outline"></ion-icon>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="onplaying" id="onplaying">
+
+        <div class="container">
+
+
+            <div class="album-onplay">
+
+                <h2 class="font-2rem">album on playing: <span> 0000 </span> </h2>
+
+                <div class="content">
+
+                    <div class="top">
+                        <div class="image-album">
+                            <img src="./images/main.png" alt="">
+                        </div>
+                        <div class="title">
+                            <div class="namenow"> On playing: <span> yeu nhau den gia</span>  </div>
+                            <div class="nextname"> Next Song: <span> 3456 </span></div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="name-album">
+                        <h2> huy khanh </h2>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="list-songs">
+                <h2 class="font-2rem">list songs: <span>
+                        <div class="fas fa-heart"></div>
+                    </span></h2>
+                <div class="container-song-main">
+
+                  
+                   
+                    
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <script src="./script/main.js"></script>
+</body>
+
+</html>

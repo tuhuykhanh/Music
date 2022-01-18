@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+
+
+$white: #fff;
+$black:  #334;
+$bgc: #999;
+$blue: #2597f4;
+$orange: #FF6651;
+$orange2: orange;
+
+
+$primary-text-active: #fff;
+$primary-text: rgb(211, 209, 209);
+$primary-text-hover: rgb(0, 0, 0);
+$bg-white: #fff;
+$bg-dark: rgb(53, 52, 52);
+
+
+:root
+{
+   --primary-bg: #232323;
+   --border: #fff; 
+   --color: black;
+   --bg: #fff;
+   --orange: #FF6651;
+   --white: #fff;
+   --orange2: orange;
+   --text-color:#fff;
+   --bg-onlight:#232323;
+ 
+
+}
+// $primary-bg: #232323;
+$nav-bg:#131313;
+.font-2rem{
+   font-size: 2rem;
+   margin-bottom: 1rem;
+   span
+   {
+      color:var(--orange);
+      margin-left: 0.5rem;
+   }
+}
+
+.light-mode
+{
+   --primary-bg: #fff;
+   --border: #232323;
+   --color: #fff;
+   --bg: #232323;
+}
+
+
+@keyframes rotate360 {
+   to
+   {
+      transform:rotate(360deg);
+   }
+}
+
+@keyframes slide {
+   
+   from
+   {
+      opacity: 0;
+   }
+   to
+   {
+      opacity: 1;
+    
+   }
+}
+
+
+
+
+
+
+
